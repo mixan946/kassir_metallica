@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Удочка для ловли &quot;фан-зоны&quot;. Концерт Metallica by mixan946</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Удочка для ловли &quot;фан-зоны&quot;. Концерт Metallica</h1>
+        <p>metallica js</p>
+
+        <p class="view"><a href="https://github.com/mixan946/kassir_metallica">View the Project on GitHub <small>mixan946/kassir_metallica</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mixan946/kassir_metallica/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mixan946/kassir_metallica/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mixan946/kassir_metallica">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="ФАН-ЗОНА" class="anchor" href="#%D0%A4%D0%90%D0%9D-%D0%97%D0%9E%D0%9D%D0%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>ФАН-ЗОНА</h3>
+
+<p>Сегодня 2 декабря 2014 года. Кассир начал распродажу билетов на концерт Металлики, но вот гавно... В фан-зону билеты так просто не поймать. Гребаные спекулянты и ажиотаж дают о себе знать</p>
+
+<h3>
+<a id="Решение-проблемы" class="anchor" href="#%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Решение проблемы</h3>
+
+<p>Я предлагаю вам супер софт для "ловли" билетов на крючок.
+Вот он:</p>
+
+<pre><code>function search(){ 
+  $.ajax("https://msk.kassir.ru/kassir/event/view/12239").complete(function(resp){ 
+    if(resp.responseText.indexOf("6500") != -1){
+      window.clearInterval(window.id);
+      alert("Фан зона епта!");
+      window.location = "https://msk.kassir.ru/kassir/event/view/12239";
+    }
+  });
+}
+
+window.id = setInterval(search, 1000);
+</code></pre>
+
+<h3>
+<a id="Как-пользоваться" class="anchor" href="#%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>Как пользоваться</h3>
+
+<ol>
+<li>Откройте страницу <a href="https://msk.kassir.ru/kassir/event/view/12239">https://msk.kassir.ru/kassir/event/view/12239</a> в вашем любимом браузере</li>
+</ol>
+
+<h3>
+<a id="Спасибо-за-внимание" class="anchor" href="#%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE-%D0%B7%D0%B0-%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Спасибо за внимание</h3>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mixan946">mixan946</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
